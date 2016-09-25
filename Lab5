@@ -50,6 +50,7 @@ int main(){
     return 0;   
 }
 void newLine(){
+     
      char s;
-     do{cin.get(s);}while(s!='\n');     
+     do{cin.get(s);}while(s!='\n');  
 }

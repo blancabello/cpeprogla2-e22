@@ -1,8 +1,4 @@
-//BELLO, Blanca Mikyle C.
-//201610066
-//CpeProgLab2 / E22
-
-//Problem #01
+//Prob1
 #include <iostream>
 #include <math.h>
 #include <ctime>
@@ -21,7 +17,7 @@ double problem1(){
 	
 }
 
-//Problem #02
+//Prob2
 void problem2(){
 	int uniques[] = {0,0,0,0,0,0,0,0,0,0};
 	int num;
@@ -44,7 +40,7 @@ void problem2(){
 	}
 }
 
-//Problem #03
+//Prob3
 int problem3(){
 	int choice, side, length, width, base, height, radius, area;
 	
@@ -63,9 +59,9 @@ int problem3(){
 	switch(choice){	
 		case 1:{
 			cout<<"******************"<<endl
-				<<"AREA OF SQUARE"<<endl
-				<<"******************"<<endl
-				<<"Enter the side of the square: ";
+			    <<"AREA OF SQUARE"<<endl
+			    <<"******************"<<endl
+			    <<"Enter the side of the square: ";
 			cin>>side;
 			area = (side*side);
 			cout<<endl<<endl<<"The area is "<<area<<" sq. units";
@@ -73,9 +69,9 @@ int problem3(){
 		break;
 		case 2:{
 			cout<<"******************"<<endl
-				<<"AREA OF RECTANGLE"<<endl
-				<<"******************"<<endl
-				<<"Enter the length and width of the rectangle: ";
+			    <<"AREA OF RECTANGLE"<<endl
+			    <<"******************"<<endl
+			    <<"Enter the length and width of the rectangle: ";
 			cin>>length>>width;
 			area = (length*width);
 			cout<<endl<<endl<<"The area is "<<area<<" sq. units";
@@ -83,9 +79,9 @@ int problem3(){
 		break;
 		case 3:{
 			cout<<"******************"<<endl
-				<<"AREA OF TRIANGLE"<<endl
-				<<"******************"<<endl
-				<<"Enter the base and width of the height: ";
+			    <<"AREA OF TRIANGLE"<<endl
+			    <<"******************"<<endl
+			    <<"Enter the base and width of the height: ";
 			cin>>base>>height;
 			area = (0.5*base*height);
 			cout<<endl<<endl<<"The area is "<<area<<" sq. units";
@@ -93,9 +89,9 @@ int problem3(){
 		break;
 		case 4:{
 			cout<<"******************"<<endl
-				<<"AREA OF CIRCLE"<<endl
-				<<"******************"<<endl
-				<<"Enter the radius: ";
+			    <<"AREA OF CIRCLE"<<endl
+			    <<"******************"<<endl
+			    <<"Enter the radius: ";
 			cin>>radius;
 			area = (radius*radius)*3.14;
 			cout<<endl<<endl<<"The area is "<<area<<" sq. units";

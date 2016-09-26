@@ -17,12 +17,12 @@ switch (strcmp (srt1, srt2)){
 	}
 }
 
-//Problem #01
+//Prob1
 int problem1(){
 	
-	cout << "******************" << endl;
+	cout << "***************" << endl;
 	cout << "STRING COMPARE" << endl;
-	cout << "******************" << endl;
+	cout << "***************" << endl;
 	
 	char str1[100], str2[100];
 	cout << "Enter a first word(str1): ";
@@ -35,12 +35,12 @@ int problem1(){
 
 }
 
-//Problem #02
+//Prob2
 int problem2(){
 	
-	cout << "******************" << endl;
+	cout << "***************" << endl;
 	cout << "STRING COPY" << endl;
-	cout << "******************" << endl;
+	cout << "***************" << endl;
 	
 	char str1[100], str2[100];
 	cout << "Enter a first word(str1): ";
@@ -53,12 +53,12 @@ int problem2(){
 	cout << "New string value for str1: " << str1;
 }
 
-//Problem #03
+//Prob3
 int problem3(){
 
-	cout << "******************" << endl;
+	cout << "**********************" << endl;
 	cout << "STRING CONCATINATION" << endl;
-	cout << "******************" << endl;
+	cout << "**********************" << endl;
 	
 	char str1[100], str2[100];
 	
@@ -72,12 +72,12 @@ int problem3(){
 	cout<<str1;
 }
 
-//Problem #4
+//Prob4
 int problem4(){
 
-	cout << "******************" << endl;
+	cout << "***************" << endl;
 	cout << "PALINDROME" << endl;
-	cout << "******************" << endl;
+	cout << "***************" << endl;
 	
 	char str[100];
 	int i, length;
@@ -100,8 +100,7 @@ int problem4(){
 		cout << str << " is a palindrome" << endl;
 	}
 }
-
-//Problem #5
+//Prob5
 int problem5(){
 
 char str[30];
@@ -128,7 +127,29 @@ char str[30];
 	}
 	
 }
-
+//Prob6
+int problem6(){
+	   int i;
+   char str[100];
+   cout<<"Enter a string: ";
+   cin.getline(str, 100);
+   for(i=0; i<strlen(str); i++){
+   	if (isalpha(str[i])){
+   		cout<<str[i];
+	   }
+   	else if (isspace(str[i])){
+   		cout<<endl;
+   		 
+	   }
+	else if (isdigit(str[i])){
+		cout<<endl;
+	}
+	
+	   else{
+	   	;
+	   }
+   }
+}
 main(){
 	
 	problem1();
@@ -140,6 +161,8 @@ main(){
 	problem4();
 	cout << endl << endl;
 	problem5();
+	cout << endl << endl;
+	problem6();
 	cout << endl << endl;
 	
 }
